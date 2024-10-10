@@ -1764,6 +1764,8 @@
   swap_page_provider_rate_unavailable = 'swap_page.provider.rate_unavailable',
   swap_page_provider_slippage_auto = 'swap_page.provider.slippage_auto',
   swap_page_provider_slippage_tolerance = 'swap_page.provider.slippage_tolerance',
+  swap_page_provider_kyc_dialog_content = 'swap_page.provider_kyc_dialog_content',
+  swap_page_provider_kyc_dialog_title = 'swap_page.provider_kyc_dialog_title',
   swap_page_recent_trade = 'swap_page.recent_trade',
   swap_page_swap = 'swap_page.swap',
   swap_page_swap_button = 'swap_page.swap_button',

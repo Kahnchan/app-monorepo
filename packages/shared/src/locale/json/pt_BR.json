@@ -1759,6 +1759,8 @@
   "swap_page.provider.rate_unavailable": "Falha ao buscar a cotação",
   "swap_page.provider.slippage_auto": "Auto ({number}%)",
   "swap_page.provider.slippage_tolerance": "Deslizamento",
+  "swap_page.provider_kyc_dialog_content": "A Changelly pode solicitar a realização de KYC em casos excepcionais para proteger a segurança dos ativos, mas não é necessário para todos os usuários. Se necessário, a Changelly enviará um link para o processo.",
+  "swap_page.provider_kyc_dialog_title": "KYC pode ser necessário",
   "swap_page.recent_trade": "Comércio recente",
   "swap_page.swap": "Trocar",
   "swap_page.swap_button": "Trocar",

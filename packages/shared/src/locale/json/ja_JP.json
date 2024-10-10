@@ -1759,6 +1759,8 @@
   "swap_page.provider.rate_unavailable": "見積もりの取得に失敗しました",
   "swap_page.provider.slippage_auto": "オート ({number}%)",
   "swap_page.provider.slippage_tolerance": "スリッページ",
+  "swap_page.provider_kyc_dialog_content": "Changellyは、資産の安全性を保護するために例外的な場合にKYCを求めることがありますが、すべてのユーザーに必要なわけではありません。必要な場合、Changellyはプロセスのためのリンクを送信します。",
+  "swap_page.provider_kyc_dialog_title": "KYCが必要になる場合があります",
   "swap_page.recent_trade": "最近の取引",
   "swap_page.swap": "スワップ",
   "swap_page.swap_button": "スワップ",

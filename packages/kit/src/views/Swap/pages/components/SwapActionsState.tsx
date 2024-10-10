@@ -29,6 +29,7 @@ import {
   useSwapActionState,
   useSwapQuoteLoading,
 } from '../../hooks/useSwapState';
+import { openUrl } from '../../../../utils/openUrl';
 
 interface ISwapActionsStateProps {
   onBuildTx: () => void;
@@ -61,14 +62,25 @@ const SwapActionsState = ({
         onConfirm: () => {
           onApprove(fromAmount, swapActionState.approveUnLimit, true);
         },
-        showCancelButton: true,
         title: intl.formatMessage({
-          id: ETranslations.swap_page_provider_approve_usdt_dialog_title,
+          id: ETranslations.swap_page_provider_kyc_dialog_title,
         }),
         description: intl.formatMessage({
-          id: ETranslations.swap_page_provider_approve_usdt_dialog_content,
+          id: ETranslations.swap_page_provider_kyc_dialog_content,
         }),
-        icon: 'ErrorOutline',
+        renderContent: (
+          <XStack justifyContent="flex-start">
+          <Button
+            size="small"
+            variant="tertiary"
+            icon="QuestionmarkOutline"
+            onPress={() => openUrl('https://changelly.com/faq/changelly/kyc-and-security/')}
+          >
+            {intl.formatMessage({ id: ETranslations.global_learn_more })}
+          </Button>
+        </XStack>
+        ),
+        icon: 'ChecklistBoxOutline',
       });
     } else {
       onApprove(fromAmount, swapActionState.approveUnLimit);
@@ -80,6 +92,36 @@ const SwapActionsState = ({
     swapActionState.approveUnLimit,
     swapActionState.shoutResetApprove,
   ]);
+
+  const handleKYCDialog = useCallback(() => {
+    Dialog.confirm({
+      onConfirmText: intl.formatMessage({
+        id: ETranslations.global_continue,
+      }),
+      onConfirm: () => {},
+      showCancelButton: true,
+      title: intl.formatMessage({
+        id: ETranslations.swap_page_provider_kyc_dialog_title,
+      }),
+      description: intl.formatMessage({
+        id: ETranslations.swap_page_provider_kyc_dialog_content,
+      }),
+      renderContent: (
+        <XStack justifyContent="flex-start">
+        <Button
+          size="small"
+          variant="tertiary"
+          icon="QuestionmarkOutline"
+          onPress={() => openUrl('https://changelly.com/faq/changelly/kyc-and-security/')}
+        >
+          {intl.formatMessage({ id: ETranslations.global_learn_more })}
+        </Button>
+      </XStack>
+      ),
+      icon: 'ChecklistBoxOutline',
+    });
+  }, []);
+
   const pageType = usePageType();
   const { md } = useMedia();
 

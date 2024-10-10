@@ -1759,6 +1759,8 @@
   "swap_page.provider.rate_unavailable": "উদ্ধৃতি আনতে ব্যর্থ হয়েছে",
   "swap_page.provider.slippage_auto": "অটো ({number}%)",
   "swap_page.provider.slippage_tolerance": "স্লিপেজ",
+  "swap_page.provider_kyc_dialog_content": "Changelly সম্পদের সুরক্ষা রক্ষার জন্য ব্যতিক্রমী ক্ষেত্রে KYC পাস করার জন্য অনুরোধ করতে পারে, তবে এটি প্রতিটি ব্যবহারকারীর জন্য প্রয়োজনীয় নয়। প্রয়োজন হলে, Changelly প্রক্রিয়ার জন্য একটি লিঙ্ক পাঠাবে।",
+  "swap_page.provider_kyc_dialog_title": "KYC প্রয়োজন হতে পারে",
   "swap_page.recent_trade": "সাম্প্রতিক বাণিজ্য",
   "swap_page.swap": "স্বপ",
   "swap_page.swap_button": "স্বপ",

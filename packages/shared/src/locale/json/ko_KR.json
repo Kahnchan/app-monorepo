@@ -1759,6 +1759,8 @@
   "swap_page.provider.rate_unavailable": "견적을 가져오는 데 실패했습니다",
   "swap_page.provider.slippage_auto": "자동 ({number}%)",
   "swap_page.provider.slippage_tolerance": "미끄러짐",
+  "swap_page.provider_kyc_dialog_content": "Changelly는 자산 보안을 보호하기 위해 예외적인 경우 KYC를 통과하도록 요청할 수 있지만, 모든 사용자에게 요구되는 것은 아닙니다. 필요할 경우, Changelly는 프로세스를 위한 링크를 보낼 것입니다.",
+  "swap_page.provider_kyc_dialog_title": "KYC가 필요할 수 있습니다",
   "swap_page.recent_trade": "최근 거래",
   "swap_page.swap": "스왑",
   "swap_page.swap_button": "스왑",

@@ -1759,6 +1759,8 @@
   "swap_page.provider.rate_unavailable": "ไม่สามารถดึงข้อมูลคำพูดมาได้",
   "swap_page.provider.slippage_auto": "อัตโนมัติ ({number}%)",
   "swap_page.provider.slippage_tolerance": "การลื่นไถล",
+  "swap_page.provider_kyc_dialog_content": "Changelly อาจขอให้ผ่าน KYC ในกรณีพิเศษเพื่อปกป้องความปลอดภัยของสินทรัพย์ แต่ไม่จำเป็นสำหรับผู้ใช้ทุกคน หากจำเป็น Changelly จะส่งลิงก์สำหรับกระบวนการนี้",
+  "swap_page.provider_kyc_dialog_title": "อาจต้องมี KYC",
   "swap_page.recent_trade": "การซื้อขายล่าสุด",
   "swap_page.swap": "แลกเปลี่ยน",
   "swap_page.swap_button": "แลกเปลี่ยน",

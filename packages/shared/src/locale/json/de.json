@@ -1759,6 +1759,8 @@
   "swap_page.provider.rate_unavailable": "Fehler beim Abrufen des Zitats",
   "swap_page.provider.slippage_auto": "Auto ({number}%)",
   "swap_page.provider.slippage_tolerance": "Durchrutschen",
+  "swap_page.provider_kyc_dialog_content": "Changelly könnte in Ausnahmefällen darum bitten, KYC durchzuführen, um die Sicherheit der Vermögenswerte zu schützen, aber es ist nicht für jeden Benutzer erforderlich. Falls nötig, wird Changelly einen Link für den Prozess senden.",
+  "swap_page.provider_kyc_dialog_title": "KYC kann erforderlich sein",
   "swap_page.recent_trade": "Jüngster Handel",
   "swap_page.swap": "Tauschen",
   "swap_page.swap_button": "Tauschen",

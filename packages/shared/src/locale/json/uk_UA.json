@@ -1759,6 +1759,8 @@
   "swap_page.provider.rate_unavailable": "Не вдалося отримати цитату",
   "swap_page.provider.slippage_auto": "Авто ({number}%)",
   "swap_page.provider.slippage_tolerance": "Проковзування",
+  "swap_page.provider_kyc_dialog_content": "Changelly може попросити пройти KYC у виняткових випадках для захисту безпеки активів, але це не є обов'язковим для кожного користувача. Якщо це необхідно, Changelly надішле посилання для проходження процесу.",
+  "swap_page.provider_kyc_dialog_title": "Може знадобитися KYC",
   "swap_page.recent_trade": "Нещодавня торгівля",
   "swap_page.swap": "Обмін",
   "swap_page.swap_button": "Обмін",

@@ -1759,6 +1759,8 @@
   "swap_page.provider.rate_unavailable": "未能獲取報價",
   "swap_page.provider.slippage_auto": "自動 ({number}%)",
   "swap_page.provider.slippage_tolerance": "滑點",
+  "swap_page.provider_kyc_dialog_content": "在特殊情況下，Changelly 可能會要求進行 KYC 以保護資產安全，但並不是針對每個用戶。如果需要，Changelly 會發送一個鏈接以進行該流程。",
+  "swap_page.provider_kyc_dialog_title": "交易提醒",
   "swap_page.recent_trade": "近期交易",
   "swap_page.swap": "兌換",
   "swap_page.swap_button": "交換",

@@ -1759,6 +1759,8 @@
   "swap_page.provider.rate_unavailable": "Gagal mengambil kutipan",
   "swap_page.provider.slippage_auto": "Otomatis ({number}%)",
   "swap_page.provider.slippage_tolerance": "Slippage",
+  "swap_page.provider_kyc_dialog_content": "Changelly mungkin meminta untuk melewati KYC dalam kasus-kasus luar biasa untuk melindungi keamanan aset, tetapi tidak diwajibkan untuk setiap pengguna. Jika diperlukan, Changelly akan mengirimkan tautan untuk proses tersebut.",
+  "swap_page.provider_kyc_dialog_title": "KYC mungkin diperlukan",
   "swap_page.recent_trade": "Perdagangan terkini",
   "swap_page.swap": "Tukar",
   "swap_page.swap_button": "Tukar",

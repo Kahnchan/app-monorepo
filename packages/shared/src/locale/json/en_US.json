@@ -1759,6 +1759,8 @@
   "swap_page.provider.rate_unavailable": "Failed to fetch the quote",
   "swap_page.provider.slippage_auto": "Auto ({number}%)",
   "swap_page.provider.slippage_tolerance": "Slippage",
+  "swap_page.provider_kyc_dialog_content": "Changelly might ask to pass KYC in exceptional cases to protect asset security, but it's not required for every user. If needed, Changelly will send a link for the process. ",
+  "swap_page.provider_kyc_dialog_title": "KYC may be required",
   "swap_page.recent_trade": "Recent trade",
   "swap_page.swap": "Swap",
   "swap_page.swap_button": "Swap",

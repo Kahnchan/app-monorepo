@@ -1759,6 +1759,8 @@
   "swap_page.provider.rate_unavailable": "उद्धरण लाने में विफल",
   "swap_page.provider.slippage_auto": "ऑटो ({number}%)",
   "swap_page.provider.slippage_tolerance": "स्लिपेज",
+  "swap_page.provider_kyc_dialog_content": "Changelly असाधारण मामलों में संपत्ति की सुरक्षा के लिए KYC पास करने के लिए कह सकता है, लेकिन यह हर उपयोगकर्ता के लिए आवश्यक नहीं है। यदि आवश्यक हो, तो Changelly प्रक्रिया के लिए एक लिंक भेजेगा।",
+  "swap_page.provider_kyc_dialog_title": "केवाईसी की आवश्यकता हो सकती है",
   "swap_page.recent_trade": "हालिया व्यापार",
   "swap_page.swap": "स्वैप",
   "swap_page.swap_button": "स्वैप",

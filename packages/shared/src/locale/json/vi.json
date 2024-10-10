@@ -1759,6 +1759,8 @@
   "swap_page.provider.rate_unavailable": "Không thể lấy được trích dẫn",
   "swap_page.provider.slippage_auto": "Tự động ({number}%)",
   "swap_page.provider.slippage_tolerance": "Trượt giá",
+  "swap_page.provider_kyc_dialog_content": "Changelly có thể yêu cầu thực hiện KYC trong những trường hợp đặc biệt để bảo vệ an ninh tài sản, nhưng không bắt buộc đối với mọi người dùng. Nếu cần, Changelly sẽ gửi một liên kết cho quy trình này.",
+  "swap_page.provider_kyc_dialog_title": "Có thể yêu cầu KYC",
   "swap_page.recent_trade": "Giao dịch gần đây",
   "swap_page.swap": "Đổi",
   "swap_page.swap_button": "Đổi",

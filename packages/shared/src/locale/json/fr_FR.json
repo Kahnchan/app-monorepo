@@ -1759,6 +1759,8 @@
   "swap_page.provider.rate_unavailable": "Échec de la récupération de la citation",
   "swap_page.provider.slippage_auto": "Auto ({number}%)",
   "swap_page.provider.slippage_tolerance": "Glissement",
+  "swap_page.provider_kyc_dialog_content": "Changelly pourrait demander de passer la vérification KYC dans des cas exceptionnels pour protéger la sécurité des actifs, mais ce n'est pas obligatoire pour chaque utilisateur. Si nécessaire, Changelly enverra un lien pour le processus.",
+  "swap_page.provider_kyc_dialog_title": "KYC peut être requis",
   "swap_page.recent_trade": "Échanges récents",
   "swap_page.swap": "Échanger",
   "swap_page.swap_button": "Échanger",
