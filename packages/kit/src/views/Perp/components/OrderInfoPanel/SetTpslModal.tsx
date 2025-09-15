@@ -13,16 +13,16 @@ import {
 import { useAllMidsAtom } from '@onekeyhq/kit/src/states/jotai/contexts/hyperliquid';
 import { EJotaiContextStoreNames } from '@onekeyhq/kit-bg/src/states/jotai/atoms';
 import { OneKeyLocalError } from '@onekeyhq/shared/src/errors';
+import {
+  formatWithPrecision,
+  validateSizeInput,
+} from '@onekeyhq/shared/src/utils/perpsUtils';
 import type {
   IOrderResponse,
   IWsWebData2,
 } from '@onekeyhq/shared/types/hyperliquid/sdk';
 
 import { PerpsProviderMirror } from '../../PerpsProviderMirror';
-import {
-  formatPriceToSignificantDigits,
-  validateSizeInput,
-} from '../../utils/tokenUtils';
 import { TpslInput } from '../TradingPanel/inputs/TpslInput';
 import { TradingFormInput } from '../TradingPanel/inputs/TradingFormInput';
 
@@ -60,7 +60,6 @@ const SetTpslForm = memo(
     onClose,
   }: ISetTpslFormProps) => {
     const [allMids] = useAllMidsAtom();
-
     const getMidPrice = useCallback(() => {
       if (!allMids?.mids) return '0';
       const midPrice = allMids.mids[position.coin];
@@ -69,7 +68,7 @@ const SetTpslForm = memo(
 
     const markPrice = useMemo(() => {
       const currentMidPrice = getMidPrice() || '0';
-      return formatPriceToSignificantDigits(Number(currentMidPrice));
+      return currentMidPrice;
     }, [getMidPrice]);
 
     const positionSize = useMemo(() => {
@@ -83,7 +82,7 @@ const SetTpslForm = memo(
     );
 
     const entryPrice = useMemo(() => {
-      return formatPriceToSignificantDigits(Number(position.entryPx || '0'));
+      return position.entryPx || '0';
     }, [position.entryPx]);
 
     const leverage = useMemo(() => {
@@ -109,8 +108,8 @@ const SetTpslForm = memo(
         ? 0
         : formData.percentage;
       const amount = positionSize.multipliedBy(percentage).dividedBy(100);
-      return formatPriceToSignificantDigits(amount.toNumber());
-    }, [positionSize, formData.percentage]);
+      return formatWithPrecision(amount.toNumber(), szDecimals);
+    }, [positionSize, formData.percentage, szDecimals]);
 
     const handleTpslChange = useCallback(
       (data: { tpPrice: string; slPrice: string }) => {
@@ -208,7 +207,6 @@ const SetTpslForm = memo(
           isBuy: isLongPosition,
           tpTriggerPx: formData.tpPrice || undefined,
           slTriggerPx: formData.slPrice || undefined,
-          slippage: 0.08,
         });
 
         onClose();
@@ -250,8 +248,7 @@ const SetTpslForm = memo(
               Position Size
             </SizableText>
             <SizableText size="$bodyMd" fontWeight="600">
-              {formatPriceToSignificantDigits(positionSize.toNumber())}{' '}
-              {position.coin}
+              {positionSize.toNumber()} {position.coin}
             </SizableText>
           </XStack>
 
@@ -295,9 +292,7 @@ const SetTpslForm = memo(
             return validateSizeInput(processedValue, szDecimals);
           }}
           helper={{
-            text: `Max: ${formatPriceToSignificantDigits(
-              positionSize.toNumber(),
-            )}`,
+            text: `Max: ${positionSize.toNumber()}`,
             align: 'right',
           }}
         />
