@@ -74,7 +74,6 @@ function TokenInputSectionComponent(
   const [internalValue, setInternalValue] = useState('');
   const inputRef = useRef<IInputRef>(null);
   const isPresetSelectionRef = useRef(false);
-
   useImperativeHandle(
     ref,
     () => ({
@@ -219,7 +218,7 @@ function TokenInputSectionComponent(
                     borderRadius="$full"
                   />
                 ) : null}
-                <SizableText size="$bodyLg">
+                <SizableText size="$bodyLg" numberOfLines={1} maxWidth="$20">
                   {selectedToken?.symbol}
                 </SizableText>
                 {isTokenSelectorVisible ? (
